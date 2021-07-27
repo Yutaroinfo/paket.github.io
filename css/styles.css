@@ -1,0 +1,250 @@
+/* common */
+/* small screen */
+
+/* header {
+  display: flex;
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+} */
+
+header > h1 {
+  height: 50px;
+}
+
+/* nav {
+  margin-left: auto;
+} */
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+}
+
+.menu a {
+  width: 150px;
+  text-align: center;
+  line-height: 64px;
+  display: block;
+}
+
+.menu a:hover {
+  background: #eee;
+}
+
+
+/* mediam screen */
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    /* margin: 0; */
+    /* padding-bottom: 8px; */
+    border-bottom: 1px solid #ddd;
+    /* justify-content: space-between; */
+  }
+  
+  header > h1{
+    width: 300px;
+  }
+
+  menu ul {
+    flex: 1;
+  }
+  
+}
+
+/* large screen */
+@media (min-width: 800px) {
+
+}
+
+
+
+
+
+
+
+/* 様々なオリジナルパッケージが作れる */
+
+
+.gallery {
+  background-image: url(../img/package.12.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.gallery > h2 {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 40px;
+}
+
+.gallery ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.gallery li {
+  width: 90px;
+  padding: 10px;
+}
+
+.row-button {
+  display:flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 20px 20px;
+  border: solid 2px blue;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #ddd;
+  background-color: blue;
+  margin: 10px;
+}
+
+
+
+
+/* 作れるパッケージは無限大 */
+.feature {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-auto-rows: 200px;
+
+  justify-content: center;
+  margin-top: 64px;
+  gap: 15px;
+}
+
+
+
+.category p {
+  font-size: 16px;
+  margin: 0;
+  margin-left: 4px;
+}
+
+
+
+
+ /* 「カンタン入稿」機能 */
+@media (min-width: 600px) {
+/* @media screen and (min-width:481px) { */
+  .date {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content:space-around;
+    background-color: blanchedalmond;
+  }
+  
+  .date1 {
+    padding: 30px ;
+  }
+  
+}
+
+@media  and (max-width:480px) {
+  .date {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content:space-around;
+    background-color: blanchedalmond;
+  }
+  
+  .date1 {
+    padding: 30px ;
+  }
+  
+}
+
+  
+
+/* 発注までの流れ */
+.HowTocontents {
+  text-align: center;
+  background-color: #DAA520;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.box1 {
+  display: flex;
+  justify-content: space-around;
+  background-color:#ddd;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5px;
+  color: black;
+  padding: 40px;
+  line-height: 25px;
+}
+
+.box2 {
+  padding: 20px;
+}
+
+.box3 {
+  padding: 0;
+  /* justify-content: right; */
+}
+
+
+
+.contactform {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.guideform {
+  display: flex;
+  justify-content: center;
+}
+
+.guideform > h3 {
+  font-size: 50px;
+}
+
+.contact {
+  width: 300px;
+  height: 200px;
+  margin: 50px;
+}
+
+
+
+footer {
+  padding: 70px;
+  margin-top: 30px;
+  background-color: black;
+  color: #ddd;
+  display: flex;
+}
+
+.content ul{
+  list-style: none;
+  padding-left: 0px;
+  width: 200px;
+  line-height: 30px;
+}
