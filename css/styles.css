@@ -9,6 +9,7 @@
   justify-content: space-between;
 } */
 
+
 header > h1 {
   height: 50px;
 }
@@ -24,6 +25,16 @@ header > h1 {
   display: flex;
 }
 
+@media (max-width:750px) {
+  header{
+    display: block;
+  }
+
+  .menu ul {
+    display: block;
+  }
+}
+
 .menu a {
   width: 150px;
   text-align: center;
@@ -37,7 +48,7 @@ header > h1 {
 
 
 /* mediam screen */
-@media (min-width: 600px) {
+/* @media (min-width: 600px) { */
   header {
     display: flex;
     /* margin: 0; */
@@ -54,14 +65,16 @@ header > h1 {
     flex: 1;
   }
   
-}
+/* } */
 
 /* large screen */
-@media (min-width: 800px) {
+/* @media (min-width: 900px) {
 
+} */
+
+body {
+  margin: 0;
 }
-
-
 
 
 
@@ -143,7 +156,7 @@ header > h1 {
 
 
  /* 「カンタン入稿」機能 */
-@media (min-width: 600px) {
+/* @media (min-width: 600px) { */
 /* @media screen and (min-width:481px) { */
   .date {
     display: flex;
@@ -159,9 +172,9 @@ header > h1 {
     padding: 30px ;
   }
   
-}
+/* } */
 
-@media  and (max-width:480px) {
+/* @media  and (max-width:480px) { */
   .date {
     display: flex;
     margin-top: 100px;
@@ -176,7 +189,7 @@ header > h1 {
     padding: 30px ;
   }
   
-}
+/* } */
 
   
 
@@ -202,11 +215,14 @@ header > h1 {
 }
 
 .box2 {
-  padding: 20px;
+  padding-top: 30px;
 }
 
+.text {
+  width: 500px;
+}
 .box3 {
-  padding: 0;
+  padding-top: 10px;
   /* justify-content: right; */
 }
 
@@ -247,4 +263,10 @@ footer {
   padding-left: 0px;
   width: 200px;
   line-height: 30px;
+}
+
+@media screen and (max-width:480px) {
+  header ul {
+    float: center;
+  }
 }
